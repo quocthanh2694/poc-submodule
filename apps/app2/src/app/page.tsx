@@ -1,5 +1,5 @@
-import styles from './page.module.scss';
 import { H1 } from '@poc-submodule/ui';
+import styles from './page.module.scss';
 
 export default function Index() {
   /*
@@ -9,9 +9,8 @@ export default function Index() {
    */
   return (
     <div className={styles.page}>
-      App 1
-      <br />
-      <H1></H1>
+      <h3>App 2</h3>
+      <H1 />
     </div>
   );
 }
