@@ -3,17 +3,17 @@ name: Build App1
 on:
   push:
     tags:
-      - 'v*'
+      - 'app1-v*'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js 18
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20.x
       - name: Install Nx dependencies
         run: npm install -g @nrwl/workspace @nrwl/next
       - name: Install project dependencies
