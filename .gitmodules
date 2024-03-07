@@ -1,0 +1,6 @@
+[submodule "apps/app1"]
+	path = apps/app1
+	url = https://github.com/quocthanh2694/poc-submodule-app1.git
+[submodule "apps/app2"]
+	path = apps/app2
+	url = https://github.com/quocthanh2694/poc-submodule-app2.git
