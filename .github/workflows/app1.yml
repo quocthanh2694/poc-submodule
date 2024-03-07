@@ -21,7 +21,11 @@ jobs:
       - name: Install project dependencies
         working-directory: ./
         run: npm install
-      - name: init submodule
-        run: ./submodule_init_app1.sh
+
+      - name: Init submodule
+        run: git submodule init
+      - name: Update submodule app1
+        run: git submodule update --remote apps/app1
+
       - name: Build app 1 start...
         run: nx run app1:build
