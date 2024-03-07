@@ -1,0 +1,23 @@
+name: Build App1
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install Nx dependencies
+        run: npm install -g @nrwl/workspace @nrwl/next
+      - name: Install project dependencies
+        working-directory: ./
+        run: npm install
+      - name: Build app 1 start...
+        run: nx run app1:build

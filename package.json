@@ -4,7 +4,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "nx dev app1",
-    "dev2": "nx dev app2"
+    "dev2": "nx dev app2",
+    "build:lib": "nx build ui",
+    "build": "nx run app1:build",
+    "build2": "nx build app2"
   },
   "private": true,
   "dependencies": {
