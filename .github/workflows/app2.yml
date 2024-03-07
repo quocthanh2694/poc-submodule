@@ -24,8 +24,8 @@ jobs:
 
       - name: Init submodule
         run: git submodule init
-      - name: Update submodule app1
-        run: git submodule update --remote apps/app1
+      - name: Update submodule app2
+        run: git submodule update --remote apps/app2
 
       - name: Build app 1 start...
-        run: nx run app1:build
+        run: nx run app2:build
