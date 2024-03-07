@@ -16,6 +16,8 @@ jobs:
           node-version: 20.x
       - name: Install Nx dependencies
         run: npm install -g @nrwl/workspace @nrwl/next
+      - name: Install Nx global 
+        run: sudo npm install -g nx@latest
       - name: Install project dependencies
         working-directory: ./
         run: npm install
